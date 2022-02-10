@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class ContentController extends Controller
 {
     public function __construct()
@@ -19,7 +17,7 @@ class ContentController extends Controller
         $announcement['announcement'] = "In our ongoing efforts to improve your employee benefits, we are pleased to announce that effective September 1, Doe Corporation will participate in a savings plan available to all full-time employees.
 
         For anyone who saves at least 3% in the master retirement plan through payroll deduction each month, Doe Corporation will deposit a matching 3%. Employees may have a payroll deduction of up to 17% of their gross income each month, making a total possible tax-deferred savings each month of 20%.
-        
+
         The benefits office will mail further information and enrollment forms to your home address. They will also hold a meeting on August 15, to explain the program and answer questions. If you plan to participate, you must sign up before August 20.";
 
         $data = [];
