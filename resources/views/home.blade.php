@@ -3,8 +3,8 @@
 @section('content')
     <section class="topcompanies">
         <h1 style="text-align: center;  background-color:#ebebebb3;
-                  padding: 10px;
-                  margin: 0 1.75rem;">Top Employers
+            padding: 10px;
+            margin: 0 1.75rem;">Top Employers
         </h1>
 
         <div class="grid-container">
