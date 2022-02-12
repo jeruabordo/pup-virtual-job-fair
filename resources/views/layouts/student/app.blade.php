@@ -28,15 +28,9 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                @if (isset(Auth::user()->id))
-                    <a class="navbar-brand" href="{{ url('home') }}">
-                        PUP VirCaF
-                    </a>
-                @else
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        PUP VirCaF
-                    </a>
-                @endif
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    PUP VirCaF
+                </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
