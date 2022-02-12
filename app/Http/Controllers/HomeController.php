@@ -21,6 +21,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboards.student');
+        return view('dashboard.profile');
     }
 }
