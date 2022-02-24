@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>PUP VirCaF</title>
+    <title>PUP Job Fair Portal</title>
 
     <link rel="icon" href="{{ asset('images/pup-logo.png') }}">
 
@@ -29,7 +29,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    PUP VirCaF
+                    PUP Job Fair Portal
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"

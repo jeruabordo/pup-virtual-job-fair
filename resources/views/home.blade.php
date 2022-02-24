@@ -9,8 +9,8 @@
 
         <div class="grid-container">
             @foreach ($clients as $client)
-                <a class="hollow button" href="{{ route('home', ['client_id' => $client->id]) }}"> <img
-                    src="{{ $client->logo }}" alt=""></a>
+                <a class="hollow button" href="{{ route('home', ['client_id' => $client->id]) }}">
+                    <img src="{{ $client->logo }}" alt=""></a>
             @endforeach
         </div>
     </section>
