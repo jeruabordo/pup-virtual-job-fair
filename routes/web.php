@@ -26,3 +26,7 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
 });
+
+Route::get('/jobs', function () {
+    return view('jobs');
+})->name('jobs');

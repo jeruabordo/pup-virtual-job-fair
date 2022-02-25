@@ -1,0 +1,388 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: "Roboto", sans-serif;
+}
+
+.main-wrapper {
+    margin: 4rem 10vw;
+}
+
+.main-header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    position: relative;
+    left: 30px;
+}
+
+#main-header-1 {
+    width: 4em;
+    grid-area: header-details;
+}
+
+#main-header-2 {
+    grid-area: header-jobs;
+}
+
+/* ---details-bar--- */
+
+.details-bar {
+    padding: 1rem 1.5rem;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    /* display: inline-block; */
+    width: 235px;
+    height: fit-content;
+    grid-area: details-bar;
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    margin: 1rem 1rem 3rem;
+}
+
+.detail-container h2 {
+    color: #000000;
+    font-size: 18px;
+    opacity: 60%;
+    margin: 0;
+    margin-bottom: 4px;
+    /* padding-bottom: 1rem; */
+}
+
+/* ---job-boxes--- */
+
+.job-box {
+    width: 280px;
+    height: 360px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 0 1.2rem 1.2rem 0;
+    padding: 1rem 1.5rem;
+    position: relative;
+    /* display: none; */
+}
+
+/* ---grid--- */
+
+.container {
+    display: grid;
+    height: 100vh;
+    /* display: inline-flexbox; */
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 0.8fr 10fr;
+    grid-template-areas:
+        "header-details header-jobs"
+        "details-bar jobs";
+    grid-column-gap: 2rem;
+}
+
+/* ---flex-box--- */
+
+.job-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: jobs;
+    position: relative;
+}
+
+/* ---job-details--- */
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.job-box h2 {
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+}
+
+.job-box h3 {
+    margin: 0 0 0.4rem 0;
+    font-size: 1rem;
+    overflow: auto;
+}
+
+.job-description {
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 0 0 0;
+    font-size: 0.9rem;
+}
+
+.job-details {
+    margin-top: 18px;
+}
+
+/* ---link-buttons--- */
+
+.buttons-container {
+    position: absolute;
+    bottom: 16px;
+    left: 28px;
+}
+
+.buttons-container p {
+    display: inline-block;
+    background: rgba(231, 169, 228, 0.69);
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin: 15px 8px 0 0;
+}
+
+
+#apply {
+    background: #4285F4;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+
+#apply a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#apply:hover {
+    background: #0456da;
+}
+
+
+#contacts {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+
+#contacts a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#contacts:hover {
+    background: #cadeff;
+}
+
+
+
+/* ---Job-tag-details--- */
+
+.job-type-tag{
+    content: "Full-time";
+    display: inline;
+    background: rgba(231, 169, 228, 0.69);
+    color: #DB00FF;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    padding: 6px 10px;
+    margin-right: 8px;
+}
+
+.profession-level-tag{
+    content: "Full-time";
+    display: inline;
+    background: #C3FFAE;
+    color: #2AA100;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    padding: 6px 10px;
+    margin-right: 8px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---checkbox-styling--- */
+
+/* input[type="checkbox"] {
+    margin-right: 6px;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #D5D5D5;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+    background: #bbbbbb;
+}
+
+label {
+    position: relative;
+    bottom: 5px;
+}
+
+input[type="checkbox"]:checked {
+    background: #4285F4;
+} */
+
+
+
+/* ---filter-job-boxes--- */
+
+/* input[type="radio"][id="radio-full-time"]:checked + label {
+    background:#6666ff;
+}
+
+input[type="radio"][id="radio-full-time"]:checked ~ .tag-part-time, input[type="radio"][id="radio-full-time"]:checked ~ .tag-internship {
+    width:0px;
+    height:0px;
+    padding:0;
+    margin:0;
+    opacity:0;
+} */
+
+
+#nothing-to-show {
+    display: none;
+    color:rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+}
+
+
+
+
+@media screen and (max-width:1150px) {
+
+    .main-wrapper {
+        margin: 4rem 2vw 4rem 5vw;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: flex;
+        flex-direction: column;
+    }
+
+    #main-header-1 {
+        order: 1;
+    }
+
+    #main-header-2 {
+        order: 3;
+    }
+
+    .details-bar {
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+    }
+
+    .job-box-container {
+        order: 4;
+    }
+
+    /* .job-box {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .img-rtc-cont {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons-container {
+        position: relative;
+        left: 10px;
+        margin-top: 15px;
+        bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .company-logo {
+        position: relative;
+        right: 10px;
+    } */
+}
+
+@media screen and (max-width: 710px) {
+    .details-bar {
+        /* display: flex;
+        flex-direction: column; */
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "job-type profession-level"
+            "date-posted profession-level";
+    }
+
+    #job-type-container {
+        grid-area: job-type;
+    }
+
+    #profession-level-container {
+        grid-area: profession-level;
+    }
+
+    #date-posted-container {
+        grid-area: date-posted;
+    }
+
+    label {
+        margin-right: 14px;
+    }
+
+    .detail-container {
+        margin: 0.2rem;
+    }
+
+    .job-box {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .img-rtc-cont {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons-container {
+        position: relative;
+        left: 10px;
+        margin-top: 15px;
+        bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .company-logo {
+        position: relative;
+        right: 10px;
+    }
+}
