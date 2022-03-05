@@ -16,11 +16,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/f1bc898e65.js" crossorigin="anonymous"></script>
 
-    {{-- Fonts --}}
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    {{-- Styles --}}
+    <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/jobpage/header-style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/jobpage/style.css') }}">
 </head>
