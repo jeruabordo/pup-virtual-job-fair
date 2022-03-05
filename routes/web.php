@@ -30,3 +30,14 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
 Route::get('/jobs', function () {
     return view('jobs');
 })->name('jobs');
+
+Route::get('/page1', function () {
+    return view('registration.page1');
+});
+Route::get('/page2', function () {
+    return view('registration.page2');
+});
+Route::get('/page3', function () {
+    return view('registration.page3');
+});
+

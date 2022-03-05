@@ -54,7 +54,7 @@ a {
   position: relative;
   padding: 1.7rem 0 2rem;
   width: 100%;
-  min-height: 80vh;
+  /* min-height: 80vh; */
   overflow: hidden;
   background-color: var(--backgroundColor);
   display: flex;
