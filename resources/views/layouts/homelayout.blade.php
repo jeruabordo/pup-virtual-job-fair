@@ -28,6 +28,11 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
+<style>
+.info{
+    text-align:center;
+}
+</style>
 
 <body>
 
@@ -44,25 +49,22 @@
                             quas.
                         </p>
                     </div>
+                    <div class="row info">
+                <div class="col">
+                    <p>Anonas Sta.Mesa</p>
+                </div>
+                <div class="col">
+                <p>093284923429</p>
+                </div>
+                <div class="col">
+                <p>pup@edu.ph</p>
+                </div>
                 </div>
 
-                <div class="center box">
-                    <h2>Address</h2>
-                    <div class="content">
-                        <div class="place">
-                            <span class="fas fa-map-marker-alt"></span>
-                            <span class="text">Sta. Mesa Anonas St.</span>
-                        </div>
-                        <div class="phone">
-                            <span class="fas fa-phone-alt"></span>
-                            <span class="text">09125171429</span>
-                        </div>
-                        <div class="email">
-                            <span class="fas fa-envelope"></span>
-                            <span class="text">pup@edu.ph</span>
-                        </div>
-                    </div>
+                <p class= "faq"> Need Help? FAQ </p>
+
                 </div>
+
 
                 <div class="right box" id="con-us">
                     <h2>Contact us</h2>

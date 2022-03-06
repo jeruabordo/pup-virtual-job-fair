@@ -52,6 +52,9 @@
         box-sizing: border-box;
         border-radius:  16px;
         margin-right: 1rem;
+        outline: none;
+        box-shadow: none;
+
        }
       form button{
         float: right;
@@ -74,6 +77,8 @@
         box-sizing: border-box;
         border-radius:  16px;
         margin-right: 1rem;
+        outline: none;
+        box-shadow: none;
      }
      .continbtn{
         background-color: #4285f4;
@@ -82,6 +87,10 @@
      @media only screen and (max-width: 600px) {
         form{
           width:80%;
+      }
+      form button {
+          float: none!important;
+          width: 100%;
       }
     }
     </style>
@@ -94,7 +103,7 @@
         <form>
 			<section>
 
-            <h1>First, let's set up your account.</h1>
+            <h1>First, let&#x27s set up your account.</h1>
 	    	<p>Welcome to PUP Virtual Job Fair! To set up your account, enter your fullname and student number.</p>
                 <div class="row">
                 <div class="col">
