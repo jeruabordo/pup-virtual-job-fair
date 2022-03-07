@@ -46,7 +46,7 @@
             <section>
                 <h1 style="text-align:center;">You&#x27re Almost Done</h1>
                 <p style="text-align:center;">
-                    Yay! This is the last step for your registration. Be sure to enter
+                    This is the last step for your registration. Be sure to enter
                     your email and password
                 </p>
 
@@ -64,9 +64,6 @@
                 <label for="password">Password:</label>
                 <input type="text" name="password" value="" maxlength="30" placeholder="****************"
                     title="Input your password">
-                <label for="confirm_password">Confirm Password:</label>
-                <input type="text" name="confirm_password" value="" maxlength="30" placeholder="****************"
-                    title="Confirm your password">
 
 
 

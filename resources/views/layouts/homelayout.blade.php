@@ -27,12 +27,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
-<style>
-.info{
-    text-align:center;
-}
-</style>
+
 
 <body>
 
@@ -49,37 +47,41 @@
                             quas.
                         </p>
                     </div>
+
                     <div class="row info">
-                <div class="col">
-                    <p>Anonas Sta.Mesa</p>
+                <div class="col-sm-4">
+
+                    <p> <span class="material-icons">location_on</span> Anonas Sta.Mesa</p>
                 </div>
-                <div class="col">
-                <p>093284923429</p>
+                <div class="col-sm-4">
+                <p> <span class="material-icons">call</span> 093284923429</p>
                 </div>
-                <div class="col">
-                <p>pup@edu.ph</p>
+                <div class="col-sm-4">
+                <p> <span class="material-icons">email</span> pup@edu.ph</p>
                 </div>
                 </div>
 
-                <p class= "faq"> Need Help? FAQ </p>
+                <p class= "faq"> Need Help? <b>FAQ </b></p>
 
                 </div>
 
 
-                <div class="right box" id="con-us">
-                    <h2>Contact us</h2>
+                <div class="box" id="con-us">
+                    <h2>Send us Feedback</h2>
                     <div class="content">
                         <form action="#">
-                            <div class="email">
-                                <div class="text">Email *</div>
-                                <input type="email" required>
-                            </div>
-                            <div class="msg">
-                                <div class="text">Message *</div>
-                                <textarea rows="2" cols="25" required></textarea>
-                            </div>
+                        <label for="email"></label>
+                         <input type="text" class="email" name="email" value="" maxlength="30"
+                         placeholder="Email" title="Email">
+
+                         <label for="message"></label>
+                        <textarea id="message"  class="message"placeholder="Message" name="message"></textarea>
+
+
+
                             <div class="btn1">
-                                <button type="submit">Send</button>
+                            <button id="submitbtn" class="submitbtnhome" type="submitbtn" name="submitbtn"
+                            value="Submit">Send Feedback</button>
                             </div>
                         </form>
                     </div>

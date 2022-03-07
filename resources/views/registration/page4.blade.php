@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <link rel="stylesheet" href="{{ asset('css/registration/registyle.css') }}">
 
 </head>
@@ -44,42 +43,23 @@
 
         <form>
             <section>
-                <h1 style="text-align:center;">You&#x27re Almost Done</h1>
+                <h1 style="text-align:center;">Thank you for signing up!</h1>
                 <p style="text-align:center;">
-                    Yay! This is the last step for your registration. Be sure to enter
-                    your email and password
+                    Welcome to PUP Virtual Job Fair! You can now procees to the login page. Happy Job Hunting!
                 </p>
+                  <svg class="box">
+            <rect class="rec"  />
+                </svg>
 
-                <label for="img"></label>
-                <div class="uploadimg">
-                    <input type="file" id="img" name="img" accept="image/*">
-                </div>
-                <p>Upload your profile picture</p>
-
-
-
-                <label for="Email">Email:</label>
-                <input type="text" name="Email" value="" maxlength="30" placeholder=" Email address"
-                    title="Input email Address">
-                <label for="password">Password:</label>
-                <input type="text" name="password" value="" maxlength="30" placeholder="****************"
-                    title="Input your password">
-                <label for="confirm_password">Confirm Password:</label>
-                <input type="text" name="confirm_password" value="" maxlength="30" placeholder="****************"
-                    title="Confirm your password">
 
 
 
                 <div class="regsub">
-                    <div class="row">
-                        <div class="col">
-                            <button id="backbtn" class="backbtn" type="Back" name="Back"
-                                value="Back">Back</button>
-                        </div><br><br>
-                        <div class="col">
-                            <button id="continbtn" class="continbtn" type="Done" name="Done"
-                                value="Done">Done</button>
-                        </div>
+
+
+                            <button id="continbtn" class="continbtn" type="Done" name="Proceed"
+                                value="Proceed">Proceed to Login</button>
+
                     </div>
                 </div>
         </form>

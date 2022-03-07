@@ -41,34 +41,37 @@
 
         <form>
             <section>
-                <h1 style="text-align:center;">Add your Contact details</h1>
-                <p style="text-align:center;">You&#x27re almost there! Be sure to fill in all the necessary information
-                    for companies to easily contact you</p>
+                <h1 style="text-align:center;">Choose your desired package</h1>
+                <p style="text-align:center;">Here are the following packages that we offer&#58;</p>
 
-                <label for="Address">Address:</label>
-                <input type="text" name="Address" value="" maxlength="50" placeholder="Address" title="Input Address">
-                <label for="phoneNo.">Phone Number:</label>
-                <input type="text" name="phoneNo." value="" maxlength="30" placeholder="Phone number" title="Input Phone number">
-
-
-                <div class="upload">
-                <label for="uploadRes">Upload your resume here:</label>
-                <input type="file" id="file" name="uploadRes" value="" placeholder="upload" maxlength="50"
-                    title="uploadRes">
-
+                <div class="row">
+                    <div class="col">
+                        <label for="Silver">Silver</label>
+                        <input type="image" src="samplelogo1.jpg" alt="Submit" width="48" height="48">
+                    </div>
+                    <div class="col">
+                        <label for="Gold.">Gold</label>
+                        <input type="image" src="samplelogo2.jpg" alt="Submit" width="48" height="48">
+                    </div>
+                    <div class="col">
+                        <label for="Platinum">Platinum</label>
+                        <input type="image" src="samplelogo3.jpg" alt="Submit" width="48" height="48">
+                    </div>
                 </div>
-
+                <div>
 
 
                 <div class="row submitbtn">
                     <div class="col">
-                        <button id="backbtn" class="backbtn" type="Back" name="Back" value="Back">Back</button>
+                        <button id="backbtn" class="backbtn" type="Back" name="Back"
+                        value="Back">Back</button>
                     </div>
                     <div class="col">
                         <button id="continbtn" class="continbtn" type="Continue" name="Continue"
-                            value="Continue">Continue</button>
+                        value="Continue">Continue</button>
                     </div>
                 </div>
+
         </form>
 
     </div>
