@@ -19,8 +19,33 @@ body {
 main {
     display: flex;
     column-gap: 1rem;
-    padding: 0 5vw 2vw 5vw;
+    padding: 8rem 5vw 2vw 5vw;
     justify-content: center;
+}
+
+header .links-container ul a:hover,
+.sidebox-one ul a:hover,
+.sidebox-two ul li a:hover {
+    color: #A82810;
+}
+
+.main-box .main-header a:hover,
+.sideboxes-container .sidebox-two #upload-resume:hover,
+.educationheader-button-container a:hover,
+.experienceheader-button-container a:hover,
+.push-to-botright a:hover,
+.awards-button-container a:hover,
+.savecertificate a:hover {
+    background-color: #0062ff;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea {
+    border: none;
+    font-family: Poppins, sans-serif;
+    background: rgba(196, 196, 196, 0.6);
 }
 
 /* ===============================HEADER========================================== */
@@ -32,6 +57,9 @@ header {
     align-items: center;
     width: 100%;
     margin-bottom: 1rem;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 1px 5px #000;
 }
 
 header .logo-container {
@@ -72,10 +100,6 @@ header .links-container ul a {
     font-size: 1.2rem;
     transition: all 200ms ease-in-out;
     /* white-space: nowrap; */
-}
-
-header .links-container ul a:hover {
-    color: #A82810;
 }
 
 header .links-container ul .notifications {
@@ -228,11 +252,6 @@ header .menu-circle-container #menuButton {
 }
 
 
-
-
-
-
-
 /* ===============================SIDEBOXES========================================== */
 
 .sideboxes-container {
@@ -242,6 +261,8 @@ header .menu-circle-container #menuButton {
     row-gap: 1.4rem;
     margin-left: 2rem;
 }
+
+/* ===========sidebox-one================= */
 
 .sidebox-one {
     width: 270px;
@@ -275,11 +296,6 @@ header .menu-circle-container #menuButton {
     /* transition: all 100ms ease-in-out; */
 }
 
-.sidebox-one ul a:hover {
-    background-color: #FBC490;
-    border-radius: 15px;
-}
-
 .settings-focus {
     font-weight: 600;
     color: #fff !important;
@@ -292,10 +308,7 @@ header .menu-circle-container #menuButton {
     margin-right: 1rem;
 }
 
-
-
-
-
+/* ===========sidebox-two================= */
 
 .sidebox-two {
     width: 270px;
@@ -345,8 +358,7 @@ header .menu-circle-container #menuButton {
     margin-right: 1rem;
 }
 
-
-
+/* ===========sidebox-three================= */
 
 .sidebox-three {
     width: 270px;
@@ -379,8 +391,8 @@ header .menu-circle-container #menuButton {
 .sidebox-three .socmed-container input {
     width: 188px;
     height: 27px;
-    border: none;
     border-radius: 10px;
+    background-color: #fff;
 }
 
 
@@ -460,12 +472,9 @@ header .menu-circle-container #menuButton {
 .foo .aboutme-container textarea {
     width: 550px;
     height: 133px;
-    background: rgba(196, 196, 196, 0.5);
     border-radius: 10px;
-    border: none;
     padding: 1rem;
     resize: none;
-    font-family: Poppins, sans-serif;
 }
 
 .main-box h3 {
@@ -491,12 +500,9 @@ header .menu-circle-container #menuButton {
 .names-container .name-container input {
     width: 180px;
     height: 37px;
-    background: rgba(196, 196, 196, 0.6);
     border-radius: 5px;
-    border: none;
     margin-right: 14px;
     padding: 1rem;
-    font-family: Poppins, sans-serif;
 }
 
 .names-container .first input {
@@ -521,11 +527,8 @@ header .menu-circle-container #menuButton {
 .bday-container .bdayinputs-container input {
     width: 80px;
     height: 37px;
-    background: rgba(196, 196, 196, 0.6);
     border-radius: 5px;
-    border: none;
     text-align: center;
-    font-family: Poppins, sans-serif;
 }
 
 .gender-container {
@@ -557,11 +560,8 @@ header .menu-circle-container #menuButton {
 .address-container input {
     width: 445px;
     height: 36px;
-    background: rgba(196, 196, 196, 0.6);
     border-radius: 5px;
-    border: none;
     padding-left: 1rem;
-    font-family: Poppins, sans-serif;
 }
 
 .fes {
@@ -578,11 +578,8 @@ header .menu-circle-container #menuButton {
 .fes input {
     width: 248px;
     height: 36px;
-    background: rgba(196, 196, 196, 0.6);
     border-radius: 5px;
-    border: none;
     padding-left: 1rem;
-    font-family: Poppins, sans-serif;
 }
 
 input::-webkit-outer-spin-button,
@@ -609,11 +606,8 @@ input[type=number] {
 .fis input {
     width: 248px;
     height: 36px;
-    background: rgba(196, 196, 196, 0.6);
     border-radius: 5px;
-    border: none;
     padding-left: 1rem;
-    font-family: Poppins, sans-serif;
 }
 
 .fis select {
@@ -658,9 +652,7 @@ input[type=number] {
 .school-container input {
     width: 510px;
     height: 36px;
-    background: rgba(196, 196, 196, 0.6);
     border-radius: 5px;
-    border: none;
 }
 
 .yeargraduated-container {
@@ -679,9 +671,7 @@ input[type=number] {
 }
 
 .text-and-checkbox-container input[type=text] {
-    background: rgba(196, 196, 196, 0.6);
     border-radius: 5px;
-    border: none;
     width: 119px;
     height: 36px;
     margin-right: 8px;
@@ -720,9 +710,7 @@ input[type=number] {
 }
 
 .positiontitle-container input {
-    background: rgba(196, 196, 196, 0.6);
     border-radius: 5px;
-    border: none;
     width: 510px;
     height: 36px;
 }
@@ -737,9 +725,7 @@ input[type=number] {
 }
 
 .companyname-container input {
-    background: rgba(196, 196, 196, 0.6);
     border-radius: 5px;
-    border: none;
     width: 510px;
     height: 36px;
 }
@@ -799,12 +785,9 @@ input[type=number] {
 .experience-textarea-container textarea {
     width: 542px;
     height: 172px;
-    background: rgba(196, 196, 196, 0.6);
     border-radius: 10px;
-    border: none;
     padding: 1rem;
     resize: none;
-    font-family: Poppins, sans-serif;
     margin-top: 6px;
 }
 
@@ -829,11 +812,8 @@ input[type=number] {
 .skills-fields-container input {
     width: 314px;
     height: 36px;
-    background: rgba(196, 196, 196, 0.6);
     border-radius: 5px;
     padding-left: 1rem;
-    font-family: Poppins, sans-serif;
-    border: none;
 }
 
 .skills-fields-container i {
@@ -867,11 +847,8 @@ input[type=number] {
 .award-container input {
     width: 542px;
     height: 36px;
-    background: rgba(196, 196, 196, 0.6);
     border-radius: 5px;
     padding-left: 1rem;
-    font-family: Poppins, sans-serif;
-    border: none;
 }
 
 .push-to-botright a {
@@ -896,11 +873,8 @@ input[type=number] {
 .licensename-container input {
     width: 542px;
     height: 36px;
-    background: rgba(196, 196, 196, 0.6);
     border-radius: 5px;
     padding-left: 1rem;
-    font-family: Poppins, sans-serif;
-    border: none;
 }
 
 .exp {
@@ -974,6 +948,7 @@ input[type=number] {
 }
 
 @media screen and (min-width: 1050px) {
+    /* for removing the sliding panel when resized above 1050px width */
 
     header #panel {
         display: none;
@@ -1013,7 +988,6 @@ input[type=number] {
     .main-box {
         width: 90vw;
     }
-
 
 
 
@@ -1105,6 +1079,7 @@ input[type=number] {
 }
 
 @media screen and (max-width: 420px) {
+    /* optimized for mobile devices */
 
     header {
         padding: 10px 10px;
@@ -1122,8 +1097,6 @@ input[type=number] {
         font-size: 14px;
         padding: 8px 25px;
     }
-
-
 
 
     header .menu-circle-container .circle {
@@ -1229,9 +1202,9 @@ input[type=number] {
         text-align: center
     }
 
-    #panelul {
+    /* #panelul {
         transform: translate(-50px, -100px);
-    }
+    } */
 
     .dateissued {
         flex-direction: row;

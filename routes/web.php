@@ -72,3 +72,7 @@ Route::get('/page7', function () {
 Route::get('/page8', function () {
     return view('registration.page8');
 });
+
+Route::get('/loginpage', function () {
+    return view('layouts.loginpage');
+});
