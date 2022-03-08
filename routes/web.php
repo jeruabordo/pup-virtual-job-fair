@@ -76,3 +76,7 @@ Route::get('/page8', function () {
 Route::get('/loginpage', function () {
     return view('layouts.loginpage');
 });
+
+Route::get('/companyprofile', function () {
+    return view('layouts.company.companyprofileOne');
+});
