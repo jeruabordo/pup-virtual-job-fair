@@ -39,7 +39,7 @@
     <div class="myft">
         <footer>
             <div class="main-content light">
-                <div class="left box" id="about-us">
+                <div class="left box col-lg-4" id="about-us">
                     <h2>About us</h2>
                     <div class="content">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officiis fugiat, cumque quos
@@ -81,7 +81,7 @@
 
                             <div class="btn1">
                             <button id="submitbtn" class="submitbtnhome" type="submitbtn" name="submitbtn"
-                            value="Submit">Send Feedback</button>
+                            value="Submit">Send</button>
                             </div>
                         </form>
                     </div>

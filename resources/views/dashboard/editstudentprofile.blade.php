@@ -6,7 +6,7 @@
         <h2>Settings</h2>
         <ul>
             <li><a href="" class="settings-focus"><i class='bx bxs-edit-alt'></i>Manage Profile</a></li>
-            <li><a href=""><i class='bx bx-card'></i>View Profile</a></li>
+            <li><a href="{{ url('/viewstudentprofile') }}"><i class='bx bx-card'></i>View Profile</a></li>
             <li><a href=""><i class='bx bxs-bookmark-heart'></i>View Saved Jobs</a></li>
             <li><a href=""><i class='bx bx-list-ul'></i>Application Status</a></li>
             <li><a href=""><i class='bx bxs-key' ></i>Password & Security</a></li>

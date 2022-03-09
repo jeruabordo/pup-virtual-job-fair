@@ -37,6 +37,13 @@
 
 <body>
     @include('layouts.logo')
+    <div class="pagination">
+
+            <p class="active">  1  </p>
+            <p class="active">2</p>
+            <p class="active">3</p>
+
+        </div>
     <div class="container d-flex justify-content-center">
 
 

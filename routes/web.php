@@ -37,6 +37,10 @@ Route::get('/editstudentprofile', function () {
     return view('dashboard.editstudentprofile');
 });
 
+Route::get('/viewstudentprofile', function () {
+    return view('dashboard.viewstudentprofile');
+});
+
 Route::get('/page0', function () {
     return view('registration.page0');
 });

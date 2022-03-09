@@ -27,87 +27,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <style>
-        form {
+    <link rel="stylesheet" href="{{ asset('css/registration/registyle.css') }}">
 
-            width: 40%;
-            line-height: 1;
-        }
 
-        form h1 {
-            font-weight: 700;
-            font-size: 2rem;
-        }
-
-        form h1,
-        form p {
-            text-align: center;
-            margin-top: 1.5rem;
-        }
-
-        form [type=text] {
-            width: 100%;
-            padding: 0.7rem 2.5rem;
-            margin: 8px 0;
-            background-color: #ebebebb3;
-            border: none;
-            border-radius: 4px;
-            box-sizing: border-box;
-            border-radius: 16px;
-            margin-right: 1rem;
-            outline: none;
-            box-shadow: none;
-
-        }
-
-        form button {
-            float: right;
-            padding: 0.7rem 2.5rem;
-            margin: 8px 0;
-            background-color: #ebebebb3;
-            border: none;
-            border-radius: 4px;
-            box-sizing: border-box;
-            border-radius: 16px;
-            margin-right: 1rem;
-        }
-
-        form select {
-            width: 100%;
-            padding: 0.7rem 2.5rem;
-            margin: 8px 0;
-            background-color: #ebebebb3;
-            border: none;
-            border-radius: 4px;
-            box-sizing: border-box;
-            border-radius: 16px;
-            margin-right: 1rem;
-            outline: none;
-            box-shadow: none;
-        }
-
-        .continbtn {
-            background-color: #4285f4;
-            color: white;
-        }
-
-        @media only screen and (max-width: 600px) {
-            form {
-                width: 80%;
-            }
-
-            form button {
-                float: none !important;
-                width: 100%;
-            }
-        }
-
-    </style>
 </head>
 
 <body>
     @include('layouts.logo')
     <div>
+    <div class="pagination">
+
+<p class="active">  1  </p>
+<p>2</p>
+<p>3</p>
+
+</div>
+
         <div class="container d-flex justify-content-center">
 
             <form>
@@ -131,15 +66,15 @@
                             placeholder="abc@example.com" title="Input Address">
                         </div>
                         <div class="col">
-                            <label for="Telephone">Telephone Number:</label>
+                            <label for="Telephone">Phone #:</label>
                             <input type="text" name="Telephone" value="" maxlength="11"
                             placeholder="Ex: 09152345678" title="Input Address">
                         </div>
                     </div>
 
                     <label for="Company_desc">Company Description:</label>
-                    <input type="text" name="company_desc" value="" maxlength="500" placeholder="Your company's description"
-                        title="Input Unit/Address"><br><br>
+                    <textarea type="text" name="company_desc" id="message" value="" maxlength="500" placeholder="Your company's description"
+                        title="Input Unit/Address"></textarea><br><br>
 
 
                     <div class="regsub">

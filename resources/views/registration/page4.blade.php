@@ -36,6 +36,11 @@
 
 <body>
     @include('layouts.logo')
+<div class="pagination">
+
+<p> <span class="material-icons check"> check </span> </p>
+
+</div>
     <div class="container d-flex justify-content-center">
 
 

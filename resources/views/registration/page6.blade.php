@@ -36,6 +36,14 @@
 
 <body>
     @include('layouts.logo')
+<div class="pagination">
+
+<p class="active">  1  </p>
+<p class="active">2</p>
+<p>3</p>
+
+</div>
+
     <div class="container d-flex justify-content-center">
 
 
@@ -45,23 +53,24 @@
                 <p style="text-align:center;">Here are the following packages that we offer&#58;</p>
 
                 <div class="row">
-                    <div class="col">
+                    <div class="col-sm centering">
                         <label for="Silver">Silver</label>
-                        <input type="image" src="samplelogo1.jpg" alt="Submit" width="48" height="48">
+                        <input type="image" src="{{ asset('/images/add_a_photo.png') }}" alt="Submit" width="48" height="48">
                     </div>
-                    <div class="col">
+                    <div class="col-sm centering">
                         <label for="Gold.">Gold</label>
-                        <input type="image" src="samplelogo2.jpg" alt="Submit" width="48" height="48">
+                        <input type="image" src="{{ asset('/images/add_a_photo.png') }}" alt="Submit" width="48" height="48">
                     </div>
-                    <div class="col">
+                    <div class="col-sm centering">
                         <label for="Platinum">Platinum</label>
-                        <input type="image" src="samplelogo3.jpg" alt="Submit" width="48" height="48">
+                        <input type="image" src="{{ asset('/images/add_a_photo.png') }}" alt="Submit" width="48" height="48">
                     </div>
                 </div>
                 <div>
 
 
-                <div class="row submitbtn">
+
+                <div class="row submitbtn nextbtn">
                     <div class="col">
                         <button id="backbtn" class="backbtn" type="Back" name="Back"
                         value="Back">Back</button>

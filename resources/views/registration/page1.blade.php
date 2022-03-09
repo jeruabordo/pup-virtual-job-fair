@@ -35,6 +35,14 @@
 <body>
     @include('layouts.logo')
     <div>
+    <div class="pagination">
+
+            <p class="active">  1  </p>
+            <p>2</p>
+            <p>3</p>
+
+        </div>
+
         <div class="container d-flex justify-content-center">
 
             <form>
@@ -76,7 +84,7 @@
                     </div>
 
                     <label for="Student_num">Student Number:</label>
-                    <input type="text" name="tudent_num" value="" maxlength="100" placeholder="enter your student no."
+                    <input type="text" name="tudent_num" value="" maxlength="100" placeholder="Enter your student no."
                         title="Input Unit/Address"><br><br>
 
 
