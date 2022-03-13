@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 class HomeController extends Controller
 {
+    // try lang
     /**
      * Create a new controller instance.
      *
