@@ -47,6 +47,7 @@
 
 
         <form>
+            @csrf
             <section>
                 <h1 style="text-align:center;">Add your Contact details</h1>
                 <p style="text-align:center;">You&#x27re almost there! Be sure to fill in all the necessary information

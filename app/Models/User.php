@@ -18,9 +18,10 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        // 'name',
         'email',
         'password',
+        'role_id'
     ];
 
     /**
@@ -41,4 +42,18 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function roles()
+    {
+        return $this->belongsTo(Role::class);
+    }
+
+    public function studentProfile()
+    {
+        return $this->hasOne(
+            StudentProfile::class,
+            'user_id', // Foreign key on student_profiles table
+            'id' // Local key on users table
+        )
+    }
 }

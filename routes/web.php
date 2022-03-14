@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['middleware' => 'prevent-back-history'], function () {
+// Route::group(['middleware' => 'prevent-back-history'], function () {
 
     Route::get('/', [App\Http\Controllers\ContentController::class, 'home'])->name('home');
 
@@ -21,7 +22,7 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
 
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
-});
+// });
 
 // Test Views
 
